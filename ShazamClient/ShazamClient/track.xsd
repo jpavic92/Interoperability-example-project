@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Track">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:byte" name="Layout"/>
+        <xs:element type="xs:string" name="Type"/>
+        <xs:element type="xs:int" name="Key"/>
+        <xs:element type="xs:string" name="Title"/>
+        <xs:element type="xs:string" name="Subtitle"/>
+        <xs:element name="Artists">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Artist">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:int" name="Id"/>
+                    <xs:element type="xs:int" name="Adamid"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element type="xs:string" name="Url"/>
+        <xs:element name="Images">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="Background"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+
+

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" 
+           elementFormDefault="qualified" 
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://schemas.datacontract.org/2004/07/ShazamRestServices.Models">
+  <xs:element name="TrackForValidate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="Title"/>
+        <xs:element type="xs:string" name="Subtitle"/>
+        <xs:element type="xs:string" name="Url"/>
+        <xs:element name="Artists">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Artist" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:short" name="Id"/>
+                    <xs:element type="xs:string" name="Name"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+

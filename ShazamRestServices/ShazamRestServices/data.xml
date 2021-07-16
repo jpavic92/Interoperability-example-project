@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TrackForValidate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Title>ad</Title>
+  <Subtitle>asd</Subtitle>
+  <Url>asd</Url>
+  <Artists>
+    <Artist>
+      <Id>222</Id>
+      <Name>Pero</Name>
+    </Artist>
+    <Artist>
+      <Id>332</Id>
+      <Name>Pero</Name>
+    </Artist>
+  </Artists>
+</TrackForValidate>

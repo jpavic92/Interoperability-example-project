@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<element name="TrackForValidate" xmlns="http://relaxng.org/ns/structure/1.0" 
+         ns="http://schemas.datacontract.org/2004/07/ShazamRestServices.Models">
+    <element name="Title">
+      <text/>
+    </element>
+    <element name="Subtitle">
+      <text/>
+    </element>
+    <element name="Url">
+      <text/>
+    </element>
+    <element name="Artists">
+      <zeroOrMore>
+        <element name="Artist">
+          <element name="Id">
+            <text/>
+          </element>
+          <element name="Name">
+            <text/>
+          </element>
+        </element>
+      </zeroOrMore> 
+    </element>
+</element>
